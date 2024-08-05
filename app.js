@@ -17,7 +17,7 @@ function criptografar (){
 
     document.getElementById("ilustracao").style.display = "none";   //Escondendo a imagem direita
 
-    document.getElementById("texto-output").style.display = "none"; //Escondendo o texto direito
+    document.getElementById("container-texto-output").style.display = "none"; //Escondendo o texto direito
 
     document.getElementById('text-area-output').innerText = textoCriptografado; //substituindo o conteudo do id text-area-output pelo conteudo
                                                                                     //da variável textoCriptografado
