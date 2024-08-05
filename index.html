@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main class="container-principal">
+        <div class="container-esquerdo">   
+            <div class="logo"> <img src="assets/Logo.png" alt=""></div> 
+
+            <div><textarea id="text-area-input" placeholder="Digite seu texto aqui"></textarea></div>
+
+            <div class="container-texto-buttons">
+                <p class="paragrafo-esquerdo"> <img src="assets/logoparagrafo2.png" alt=""> Apenas letras minusculas</p>
+                <div class="container-buttons">
+                    <button onclick ="criptografar()" id="btn-criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" id="btn-descriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="conteudo-container-direito">
+            <textarea id="text-area-output" style="display: none;"></textarea>
+            <div class="container-btn-copiar">
+                <button onclick="copiarTexto()"  id="btn-copiar" style="display: none;" >Copiar</button>
+            </div>
+            <div id="ilustracao"> 
+                <img class="imagem-direita" src="assets/ilustracao.png" alt="ilustração">
+            </div>
+                                                                                                                    
+            <div id="container-texto-output">
+                <p class="texto-direito"> Nenhuma mensagem encontrada</h2>
+                <p class="paragrafo-direito">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+                
+        </div >  
+   </main>  
+    
+    <div class="container-footer"> 
+        <footer class="rodape">Desenvolvido por Dyon</footer>   
+    </div> 
+    <script src="app.js"></script>     
+</body>
+</html>

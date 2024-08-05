@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*  Obs: 1 rem equivale a 16 px*/
+
+/*Resetando margin e padding, definindo fonte */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+
+}
+
+/*Definindo variáveis das cores */
+:root{
+    --cor-fundo-principal:#7593cb;
+    --cor-fundo-secundaria:#0A3871;
+    --cor-fundo-terciaria:#ffffff;
+    --cor-texto-principal:#ffffff;
+    --cor-texto-secundaria:#0A3871;
+}
+
+/*Definindo cor de fundo da tela */
+body{
+    background-color: var(--cor-fundo-principal);
+}
+
+/*Aplicando display flex e espaçamento */
+.container-principal{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Definindo a direção do conteudo em coluna */
+.container-esquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*Definindo a margin do logo */
+.logo{
+    margin-top: 40px;
+    
+}
+
+/* Estilizando a caixa de texto principal */
+#text-area-input{
+    width: 600px;
+    height: 200px;
+    font-weight: 400;
+    font-size: 2rem;        
+    color:var(--cor-texto-principal);
+    background-color: var(--cor-fundo-principal);
+    margin-left: 240px;
+    margin-top: 100px;
+    border: none;
+    outline: none;
+}
+
+/*Definindo dimensões do container dos botões */
+.container-texto-buttons{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-left: 240px;
+    margin-top: 150px;
+}
+
+/*Definindo dimensões do container buttons */
+.container-buttons{
+    display: flex;
+    gap: 24px;
+    width: 680px;
+}
+
+/*Definindo dimensões do paragrafo esquerdo */
+.paragrafo-esquerdo{
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: 400;
+    gap: 10px;
+    justify-content: left;
+}
+
+/*Estilizando o botão de criptografar */
+#btn-criptografar{
+    background-color: var(--cor-fundo-secundaria);
+    color: var(--cor-texto-principal);
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+/*Estilizando o botão de descriptografar */
+#btn-descriptografar{
+    background-color: var(--cor-fundo-terciaria);
+    color: var(--cor-texto-secundaria);
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+/*Definindo dimensões e estilizando a caixa de texto secundária */
+#text-area-output{
+    width: 350px;
+    height: 400px;
+    margin-top: 20px;
+    font-size: 2rem;
+    color:var(--cor-texto-principal);
+    background-color: var(--cor-fundo-secundaria);
+    border: none;
+    outline: none;
+    
+}
+
+/* Definindo dimensões e estilizando conteudo-container-direito */
+.conteudo-container-direito{
+    font-size: 1.5rem;
+    color: var(--cor-texto-principal);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--cor-fundo-secundaria);
+    width: 400px;
+    height: 690px;
+    margin-top: 30px;
+    margin-right: 40px;
+    border-radius: 32px;
+    align-items: center;
+
+}
+
+/*Definindo dimensões do container do botão copiar */
+.container-btn-copiar{
+    margin-top: 132px;
+    width: 320px;
+}
+
+/* Definindo dimensões e estilizando botão copiar */
+#btn-copiar{
+    background-color: var(--cor-fundo-terciaria);
+    color: var(--cor-texto-secundaria);
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+/* Definindo dimensões do container da imagem */
+#ilustracao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 336px;
+    
+}
+
+
+/*Definindo dimensões do container */
+#container-texto-output{
+    margin-top: 32px;
+    width: 336px;
+    height: 48px;
+   
+}
+
+/*Definindo dimensões e estilizando texto do lado diretito */
+.texto-direito{
+    text-align: center;
+    color:var(--cor-texto-principal);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/*Definindo dimensões e estilizando paragrafo do lado direito */
+.paragrafo-direito{
+    width: 336px;
+    margin-top: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-texto-principal);
+    font-size: 1rem;
+}
+
+
+
+/*Definindo dimensões e estlizando container do rodapé */
+.container-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--cor-texto-principal);
+}
+
+/*Definindo o modo de visualização em tabletes */
+@media( max-width: 1130px){
+    
+    .container-principal{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+
+    #text-area-input{
+        width: 688px;
+        height: 100px;
+        font-weight: 400;
+        font-size: 2rem;        
+        color:var(--cor-texto-secundaria);
+        background-color: var(--cor-fundo-principal);
+        margin-left: 40px;
+        margin-top: 50px;
+        border: none;
+        outline: none;
+    }
+
+    .container-texto-buttons{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        margin-left: 40px;
+        margin-top: 150px;
+    }
+
+    .container-footer{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 60px;
+        font-weight: 700;
+        color: var(--cor-texto-principal);
+}
+
+    
+
+    .conteudo-container-direito{
+        font-size: 1.5rem;
+        color: var(--cor-texto-principal);
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: var(--cor-fundo-secundaria);
+        width: 688px;
+        height: 300px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 55px;
+        border-radius: 32px;
+    
+    }
+
+    #ilustracao{
+        display: none;
+        justify-content: center;
+        width: 5%;
+        margin-top: 40px;
+    }
+
+    #container-texto-output{
+        margin-top: 30px;
+        width: 624px;
+        height: 69px;
+        
+    
+    }
+
+    .texto-direito{
+        text-align: center;
+        color: var(--cor-texto-principal);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .paragrafo-direito{
+        width: 624px;
+        height: 24px;
+        margin-top: 16px;
+        font-weight: 400;
+        color: var(--cor-texto-principal);
+        font-size: 1rem;
+    }
+
+    #text-area-output{
+        width: 680px;
+        height: 185px;
+        border-radius: 24px;
+        text-align: center;
+        font-size: 2rem;
+        padding: 2px;
+        color:var(--cor-texto-principal);
+        background-color:var(--cor-fundo-secundaria);
+        border: none;
+        outline: none;
+        
+    }
+    
+    .container-btn-copiar{
+        display: flex;
+        justify-content: center;
+        width:600px ;
+        height: 67px;
+        margin-top: 5px;
+        
+        
+    }
+    
+    #btn-copiar{
+        background-color: var(--cor-fundo-terciaria);
+        color: var(--cor-texto-secundaria);
+        width: 600px;
+        height: 67px;
+        border-radius: 24px;
+    }
+  
+
+    
+}
+
+
+
+
