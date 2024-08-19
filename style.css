@@ -42,6 +42,8 @@ body{
 /*Definindo a margin do logo */
 .logo{
     margin-top: 40px;
+    width: 31px;
+    height: 31px;
     
 }
 
@@ -211,7 +213,7 @@ body{
 
     #text-area-input{
         width: 688px;
-        height: 100px;
+        height: 200px;
         font-weight: 400;
         font-size: 2rem;        
         color:var(--cor-texto-secundaria);
@@ -323,6 +325,160 @@ body{
   
 
     
+}
+
+/* Definindo modo de visualização para smartphone*/
+@media( max-width: 723px){
+
+    
+    
+
+    .container-principal{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-top:24px;
+    }
+
+    
+
+    #text-area-input{
+        width: 343px;
+        height: 200px;
+        font-weight: 400;
+        font-size: 2rem;        
+        color:var(--cor-texto-secundaria);
+        background-color: var(--cor-fundo-principal);
+        margin-left: 16px;
+        margin-top: 100px;
+        border: none;
+        outline: none;
+    }
+
+    .container-texto-buttons{
+        display: flex;
+        gap: 10px;
+        width: 343px;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 16px;
+        margin-top: 150px;
+    }
+
+    .container-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 343px;
+        
+    }
+
+    .paragrafo-esquerdo{
+        display: flex;
+        font-size: 0.75rem;
+        font-weight: 400;
+        gap: 10px;
+        margin-left: 16px;
+    }
+
+    .conteudo-container-direito{
+        font-size: 1.5rem;
+        color: var(--cor-texto-principal);
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        background-color: var(--cor-fundo-secundaria);
+        width: 400px;
+        height: 400px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 30px;
+        border-radius: 32px;
+        
+    
+    }
+
+    #container-texto-output{
+    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 327px;
+        margin-bottom: 100px;
+        
+        
+    
+    }
+
+    .texto-direito{
+        width: 327px;
+        color: var(--cor-texto-principal);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .paragrafo-direito{
+        
+        width: 327px;
+        font-weight: 400;
+        color: var(--cor-texto-principal);
+        font-size: 1rem;
+    }
+    
+    #text-area-output{
+        width: 380px;
+        height: 300px;
+        border-radius: 24px;
+        text-align: center;
+        font-size: 2rem;
+        padding: 2px;
+        color:var(--cor-texto-principal);
+        background-color:var(--cor-fundo-secundaria);
+        border: none;
+        outline: none;
+        
+    }
+    
+    .container-btn-copiar{
+        display: flex;
+        justify-content: center;
+        width:600px ;
+        height: 67px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        
+        
+    }
+    
+    #btn-copiar{
+        background-color: var(--cor-fundo-terciaria);
+        color: var(--cor-texto-secundaria);
+        width: 343px;
+        height: 67px;
+        border-radius: 24px;
+        
+    }
+
+    .container-footer{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: var(--cor-texto-principal);
+    }
+
+
+
 }
 
 
