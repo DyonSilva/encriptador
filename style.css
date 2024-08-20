@@ -328,7 +328,7 @@ body{
 }
 
 /* Definindo modo de visualização para smartphone*/
-@media( max-width: 600px){
+@media( max-width: 723px){
 
     
     
@@ -450,7 +450,7 @@ body{
     .container-btn-copiar{
         display: flex;
         justify-content: center;
-        width:600px ;
+        width:343px ;
         height: 67px;
         margin-top: 5px;
         margin-bottom: 15px;
