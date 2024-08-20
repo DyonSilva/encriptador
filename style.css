@@ -328,7 +328,7 @@ body{
 }
 
 /* Definindo modo de visualização para smartphone*/
-@media( max-width: 723px){
+@media( max-width: 600px){
 
     
     
